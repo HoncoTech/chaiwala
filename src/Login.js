@@ -23,11 +23,11 @@ function Login(){
         sendEmailVerification(auth.currentUser)
         .then(() => {
           setTimeActive(true)
-          navigate('/chaiwala/verify-email')
+          navigate('/verify-email')
         })
       .catch(err => alert(err.message))
     }else{
-      navigate('/chaiwala')
+      navigate('/')
     }
     })
     .catch(err => setError(err.message))
@@ -57,7 +57,7 @@ function Login(){
         </form>
         <p>
           Don't have and account? 
-          <Link to='/chaiwala/register'>Create one here</Link>
+          <Link to='/register'>Create one here</Link>
         </p>
       </div>
     </div>

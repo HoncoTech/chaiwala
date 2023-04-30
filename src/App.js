@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {HashRouter as Router, Routes, Route} from 'react-router-dom'
 import Profile from './Profile'
 import Register from './Register'
 import VerifyEmail from './VerifyEmail';
@@ -26,22 +26,22 @@ function App() {
     <Router>
       <AuthProvider value={{currentUser, timeActive, setTimeActive}}>
         <Routes>
-          <Route exact path='/chaiwala' element={
+          <Route exact path='/' element={
             <PrivateRoute>
               <Profile/>
             </PrivateRoute>
           }/>
-          <Route path="/chaiwala/login" element={
+          <Route path="/login" element={
             !currentUser?.emailVerified 
             ? <Login/>
-            : <Navigate to='/chaiwala' replace/>
+            : <Navigate to='/' replace/>
           } />
-          <Route path="/chaiwala/register" element={
+          <Route path="/register" element={
             !currentUser?.emailVerified 
             ? <Register/>
-            : <Navigate to='/chaiwala' replace/>
+            : <Navigate to='/' replace/>
           } />
-          <Route path='/chaiwala/verify-email' element={<VerifyEmail/>} /> 
+          <Route path='/verify-email' element={<VerifyEmail/>} /> 
         </Routes>  
       </AuthProvider>
   </Router>

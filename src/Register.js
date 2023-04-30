@@ -35,7 +35,7 @@ function Register() {
           sendEmailVerification(auth.currentUser)   
           .then(() => {
             setTimeActive(true)
-            navigate('/chaiwala/verify-email')
+            navigate('/verify-email')
           }).catch((err) => alert(err.message))
         })
         .catch(err => setError(err.message))
@@ -76,7 +76,7 @@ function Register() {
         </form>
         <span>
           Already have an account?  
-          <Link to='/chaiwala/login'>login</Link>
+          <Link to='/login'>login</Link>
         </span>
       </div>
     </div>
