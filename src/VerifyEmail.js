@@ -18,7 +18,7 @@ function VerifyEmail() {
       .then(() => {
         if(currentUser?.emailVerified){
           clearInterval(interval)
-          navigate('/')
+          navigate('/chaiwala')
         }
       })
       .catch((err) => {

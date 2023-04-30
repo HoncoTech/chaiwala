@@ -35,7 +35,7 @@ function Register() {
           sendEmailVerification(auth.currentUser)   
           .then(() => {
             setTimeActive(true)
-            navigate('/verify-email')
+            navigate('/chaiwala/verify-email')
           }).catch((err) => alert(err.message))
         })
         .catch(err => setError(err.message))

@@ -23,11 +23,11 @@ function Login(){
         sendEmailVerification(auth.currentUser)
         .then(() => {
           setTimeActive(true)
-          navigate('/verify-email')
+          navigate('/chaiwala/verify-email')
         })
       .catch(err => alert(err.message))
     }else{
-      navigate('/')
+      navigate('/chaiwala')
     }
     })
     .catch(err => setError(err.message))

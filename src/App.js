@@ -34,12 +34,12 @@ function App() {
           <Route path="/chaiwala/login" element={
             !currentUser?.emailVerified 
             ? <Login/>
-            : <Navigate to='/' replace/>
+            : <Navigate to='/chaiwala' replace/>
           } />
           <Route path="/chaiwala/register" element={
             !currentUser?.emailVerified 
             ? <Register/>
-            : <Navigate to='/' replace/>
+            : <Navigate to='/chaiwala' replace/>
           } />
           <Route path='/chaiwala/verify-email' element={<VerifyEmail/>} /> 
         </Routes>  
