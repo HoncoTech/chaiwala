@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/chaiwala/static/css/main.6a3f07fa.css",
-    "main.js": "/chaiwala/static/js/main.83e2f44a.js",
+    "main.js": "/chaiwala/static/js/main.879f4f8f.js",
     "static/js/787.284e1364.chunk.js": "/chaiwala/static/js/787.284e1364.chunk.js",
     "index.html": "/chaiwala/index.html",
     "main.6a3f07fa.css.map": "/chaiwala/static/css/main.6a3f07fa.css.map",
-    "main.83e2f44a.js.map": "/chaiwala/static/js/main.83e2f44a.js.map",
+    "main.879f4f8f.js.map": "/chaiwala/static/js/main.879f4f8f.js.map",
     "787.284e1364.chunk.js.map": "/chaiwala/static/js/787.284e1364.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a3f07fa.css",
-    "static/js/main.83e2f44a.js"
+    "static/js/main.879f4f8f.js"
   ]
 }
